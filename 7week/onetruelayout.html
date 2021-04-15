@@ -1,0 +1,54 @@
+<!-- One True 레이아웃
+    1. 행 구성하기
+    2. 열 구성하기
+    3. 레이아웃 구성하기
+    - 부모 태그에 고정된 너비를 입력
+    - 수평 정렬하는 부모태그 overflow: hidden
+    - 자손 태그에 적당한 너비 입력하고 float 적용
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 960px;
+            /* 상하 마진: 10px 좌우 마진: auto */
+            margin: 10px auto;
+        }
+        #middle{
+            overflow:hidden;
+        }
+        #left{
+            float:left;
+            width: 150px;
+            height: 500px;
+            background-color: red;
+        }
+        #right{
+            float:left;
+            width: 810px;
+            height: 500px;
+            background-color: blue;
+        }
+        #top{
+            background-color: yellow;
+        }
+        #bottom{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, incidunt, natus neque non tempora pariatur molestiae corporis eligendi quam id delectus numquam consectetur corrupti quibusdam ea earum dicta similique. Quod?</div>
+    <div id="middle">
+        <div id="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, possimus optio. Voluptatibus, deserunt voluptatum sit veniam vero accusamus possimus reiciendis iusto commodi iste, impedit doloremque, perspiciatis aspernatur dolores nobis eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, iste labore. Impedit laudantium corrupti distinctio nostrum, cupiditate sequi blanditiis dicta laborum delectus voluptatum aliquid! Atque aliquam maiores recusandae doloribus neque.</div>
+        <div id="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo veniam obcaecati aliquam quasi eum at similique fugiat ratione, praesentium in accusantium nesciunt voluptates natus quidem laborum architecto quam quae iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quod temporibus explicabo dolores voluptas laborum, non, iusto eaque voluptate error quia repudiandae debitis natus unde exercitationem obcaecati! Excepturi, repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eligendi quam natus beatae deleniti fuga voluptatem reiciendis aspernatur laborum excepturi ullam culpa nulla corrupti error qui? Obcaecati aliquid debitis numquam.</div>
+    </div>
+    <div id="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, repellendus. Voluptatum officia ea distinctio quisquam quibusdam doloribus inventore quas illum fugit, dolorem sequi possimus at, dolores, maiores impedit eos cum?</div>
+</body>
+</html>

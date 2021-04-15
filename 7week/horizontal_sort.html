@@ -1,0 +1,53 @@
+<!-- 
+    수평정렬 레이아웃
+규칙: 자손에게 float 속성을 지정하고, 부모의 overflow속성에는 hidden 키워드 적용
+거의 대다수의 웹사이트들이 수평정렬되어있음
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 ;
+        }
+        .container{
+            /* 오버플로우 속성을 지정해주지 않으면, 블럭 영역을 차지하지 못하고 박스에 이어 다음 태그가 위치하게 됨  */
+            overflow:hidden;
+            margin: 0;
+        }
+        .box{
+            /* 이 속성을 지우게 되면, 박스들이 수직정렬됨 */
+            float:left; 
+            padding: 10px;
+            border: 1px solid black;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nam odit delectus libero. Aspernatur provident voluptatum vitae dolor magnam id fuga impedit odio ipsum, sunt dolore odit deserunt? Corrupti, possimus!</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nam odit delectus libero. Aspernatur provident voluptatum vitae dolor magnam id fuga impedit odio ipsum, sunt dolore odit deserunt? Corrupti, possimus!</p>
+
+
+    <div class="container">
+        <div class="box">메뉴 -1</div>
+        <div class="box">메뉴 -2</div>
+        <div class="box">메뉴 -3</div>
+        <div class="box">메뉴 -4</div>
+
+    </div>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nam odit delectus libero. Aspernatur provident voluptatum vitae dolor magnam id fuga impedit odio ipsum, sunt dolore odit deserunt? Corrupti, possimus!</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nam odit delectus libero. Aspernatur provident voluptatum vitae dolor magnam id fuga impedit odio ipsum, sunt dolore odit deserunt? Corrupti, possimus!</p>
+
+</body>
+</html>
+
+ 
+
+

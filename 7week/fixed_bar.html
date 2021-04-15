@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin-top:50px;
+            margin-left: 50px;
+        }
+        .top_bar{
+            background-color: darkcyan;
+            position: fixed;
+            height: 50px;
+            /* left, top, right과의 거리가 0이라는 뜻. 즉, 페이지의 위쪽 상단에 딱 붙이겠다는 뜻임 */
+            left:0; top:0; right:0;
+        } 
+        .left_bar{
+            background-color: darkgoldenrod;
+            width:50px;
+            position:fixed;
+            left:0; top:50px; bottom:0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top_bar"></div>
+    <div class="left_bar"></div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad labore suscipit soluta facilis sed neque expedita adipisci, deleniti, architecto est, fugiat necessitatibus repellat illum placeat consequuntur natus esse aliquam voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad labore suscipit soluta facilis sed neque expedita adipisci, deleniti, architecto est, fugiat necessitatibus repellat illum placeat consequuntur natus esse aliquam voluptatum!</p>
+
+    </div>
+</body>
+</html>
